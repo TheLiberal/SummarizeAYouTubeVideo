@@ -61,31 +61,43 @@ const PrivacyPolicy = () => {
 
 1. Introduction
 
-This Privacy Policy outlines the types of personal and non-personal data collected by SummarizeAYouTubeVideo, accessible at https://summarizeayoutubevideo.com/privacy-policy, and explains how this data is used and protected.
+This Privacy Policy applies to the SummarizeAYouTubeVideo website, accessible at https://summarizeayoutubevideo.com. It outlines our practices regarding the collection, use, and protection of personal and non-personal data.
 
 2. Data Collection
 
-We collect personal data such as name, email, and payment information for order processing. Additionally, we use web cookies to collect non-personal data to enhance user experience.
+We collect personal data such as name, email, and payment information primarily for order processing. Non-personal data is collected through web cookies to enhance user experience on our website.
 
 3. Purpose of Data Collection
 
-The personal data collected is used solely for the purpose of processing orders and providing our services. Non-personal data is used to improve the functionality and user experience of our website.
+Personal data is used for processing orders and providing our services. Non-personal data helps improve our website's functionality and user experience.
 
 4. Data Sharing
 
-SummarizeAYouTubeVideo does not share any collected data with third parties.
+SummarizeAYouTubeVideo does not share collected data with third-party entities.
 
 5. Children's Privacy
 
-Our service does not address anyone under the age of 18 ("Children"). We do not knowingly collect personally identifiable information from children. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.
+Our services are not intended for individuals under the age of 18. We do not knowingly collect personal data from children. If we become aware that a child has provided us with personal data, we will take steps to remove such information and terminate the child's account.
 
-6. Updates to the Privacy Policy
+6. Data Protection
 
-We reserve the right to update our Privacy Policy at any time. Any changes will be communicated to users via email.
+We are committed to protecting your data and will take appropriate measures to ensure its security, integrity, and confidentiality in accordance with applicable data protection laws in Poland.
 
-7. Contact Information
+7. Updates to the Privacy Policy
 
-For any questions or concerns regarding this Privacy Policy, please contact us at blaise@fegrowthpartner.com.`}
+We may update this Privacy Policy from time to time. Users will be notified of any changes via email.
+
+8. Rights of Data Subjects
+
+Under Polish law, you have the right to access, rectify, delete, or restrict the processing of your personal data. You also have the right to object to processing and the right to data portability.
+
+9. Governing Law
+
+This Privacy Policy is governed by the laws of Poland and shall be interpreted accordingly.
+
+10. Contact Information
+
+For inquiries or concerns regarding this Privacy Policy, please contact us at bgulaj+smmrzytvid@gmail.com.`}
         </pre>
       </div>
     </main>

@@ -61,7 +61,7 @@ const TOS = () => {
 
 1. Introduction
 
-Welcome to SummarizeAYouTubeVideo, accessible at https://summarizeayoutubevideo.com/tos. This website is a web application designed to provide users with the ability to summarize YouTube videos by pasting the video link into the app.
+Welcome to SummarizeAYouTubeVideo, accessible at https://summarizeayoutubevideo.com. This website is a web application designed to provide users with the ability to summarize YouTube videos by pasting the video link into the app.
 
 2. Acceptance of Terms
 
@@ -85,7 +85,7 @@ The website uses cookies to improve user experience. For more details, please re
 
 7. Governing Law
 
-These Terms of Service shall be governed by the laws of the United Kingdom.
+These Terms of Service shall be governed by and construed in accordance with the laws of Poland. Any disputes arising under or in connection with these Terms shall be subject to the exclusive jurisdiction of the Polish courts.
 
 8. Changes to Terms
 
@@ -93,7 +93,7 @@ SummarizeAYouTubeVideo reserves the right to modify these Terms of Service at an
 
 9. Contact Information
 
-For any questions or concerns regarding these Terms of Service, please contact us at blaise@fegrowthpartner.com.
+For any questions or concerns regarding these Terms of Service, please contact us at bgulaj+smmrzytvid@gmail.com.
 
 Thank you for using Summarize A YouTube Video!
 `}
