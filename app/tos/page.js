@@ -57,39 +57,46 @@ const TOS = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: September 26, 2023
+          {`Effective Date: January 1, 2024
 
-Welcome to ShipFast!
+1. Introduction
 
-These Terms of Service ("Terms") govern your use of the ShipFast website at https://shipfa.st ("Website") and the services provided by ShipFast. By using our Website and services, you agree to these Terms.
+Welcome to SummarizeAYouTubeVideo, accessible at https://summarizeayoutubevideo.com/tos. This website is a web application designed to provide users with the ability to summarize YouTube videos by pasting the video link into the app.
 
-1. Description of ShipFast
+2. Acceptance of Terms
 
-ShipFast is a platform that offers a JavaScript code boilerplate to assist entrepreneurs in launching their startups more efficiently.
+By accessing and using SummarizeAYouTubeVideo, you agree to be bound by these Terms of Service, our Privacy Policy (accessible at https://summarizeayoutubevideo.com/privacy-policy), and any additional terms and conditions that may apply.
 
-2. Ownership and Usage Rights
+3. Use of Service
 
-When you purchase a package from ShipFast, you gain the right to download and use the code provided for creating applications. You own the code you create but do not have the right to resell it. We offer a full refund within 7 days of purchase, as specified in our refund policy.
+SummarizeAYouTubeVideo is available to users who have subscribed to a plan. Subscribers are authorized to use the application to summarize the content of YouTube videos.
 
-3. User Data and Privacy
+4. Payment and Refund Policy
 
-We collect and store user data, including name, email, and payment information, as necessary to provide our services. For details on how we handle your data, please refer to our Privacy Policy at https://shipfa.st/privacy-policy.
+When subscribing to a plan, users agree to provide payment information. A full refund can be requested within 14 days following the purchase date.
 
-4. Non-Personal Data Collection
+5. User Data Collection
 
-We use web cookies to collect non-personal data for the purpose of improving our services and user experience.
+We collect personal data such as your name, email, and payment information. For details on how we handle your data, please refer to our Privacy Policy.
 
-5. Governing Law
+6. Non-Personal Data Collection
 
-These Terms are governed by the laws of France.
+The website uses cookies to improve user experience. For more details, please refer to our Privacy Policy.
 
-6. Updates to the Terms
+7. Governing Law
 
-We may update these Terms from time to time. Users will be notified of any changes via email.
+These Terms of Service shall be governed by the laws of the United Kingdom.
 
-For any questions or concerns regarding these Terms of Service, please contact us at marc@shipfa.st.
+8. Changes to Terms
 
-Thank you for using ShipFast!`}
+SummarizeAYouTubeVideo reserves the right to modify these Terms of Service at any time. Users will be notified of any changes via email.
+
+9. Contact Information
+
+For any questions or concerns regarding these Terms of Service, please contact us at blaise@fegrowthpartner.com.
+
+Thank you for using Summarize A YouTube Video!
+`}
         </pre>
       </div>
     </main>
