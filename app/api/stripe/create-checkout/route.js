@@ -67,7 +67,7 @@ export async function POST(req) {
 
     const stripeSessionURL = await createCheckout({
       priceId,
-      mode,
+      mode: 'subscription',
       successUrl,
       cancelUrl,
       clientReferenceId: session.user.id,

@@ -108,39 +108,40 @@ const Item = ({ feature, isOpen, setFeatureSelected }) => {
   const { title, description, svg } = feature;
 
   return (
-    <li>
-      <button
-        className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
-        onClick={(e) => {
-          e.preventDefault();
-          setFeatureSelected();
-        }}
-        aria-expanded={isOpen}
-      >
-        <span className={`duration-100 ${isOpen ? "text-primary" : ""}`}>
-          {svg}
-        </span>
-        <span
-          className={`flex-1 text-base-content ${
-            isOpen ? "text-primary font-semibold" : ""
-          }`}
-        >
-          <h3 className="inline">{title}</h3>
-        </span>
-      </button>
+    // <li>
+    //   <button
+    //     className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
+    //     onClick={(e) => {
+    //       e.preventDefault();
+    //       setFeatureSelected();
+    //     }}
+    //     aria-expanded={isOpen}
+    //   >
+    //     <span className={`duration-100 ${isOpen ? "text-primary" : ""}`}>
+    //       {svg}
+    //     </span>
+    //     <span
+    //       className={`flex-1 text-base-content ${
+    //         isOpen ? "text-primary font-semibold" : ""
+    //       }`}
+    //     >
+    //       <h3 className="inline">{title}</h3>
+    //     </span>
+    //   </button>
 
-      <div
-        ref={accordion}
-        className={`transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden`}
-        style={
-          isOpen
-            ? { maxHeight: accordion?.current?.scrollHeight, opacity: 1 }
-            : { maxHeight: 0, opacity: 0 }
-        }
-      >
-        <div className="pb-5 leading-relaxed">{description}</div>
-      </div>
-    </li>
+    //   <div
+    //     ref={accordion}
+    //     className={`transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden`}
+    //     style={
+    //       isOpen
+    //         ? { maxHeight: accordion?.current?.scrollHeight, opacity: 1 }
+    //         : { maxHeight: 0, opacity: 0 }
+    //     }
+    //   >
+    //     <div className="pb-5 leading-relaxed">{description}</div>
+    //   </div>
+    // </li>
+    <div>Feature Item</div>
   );
 };
 
@@ -180,7 +181,8 @@ const Media = ({ feature }) => {
       />
     );
   } else {
-    return <div className={`${style} !border-none`}></div>;
+    // return <div className={`${style} !border-none`}></div>;
+    return <div>Media Content</div>;
   }
 };
 
