@@ -12,9 +12,9 @@ import Image from "next/image";
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   {
-    title: "Emails",
+    title: "Transcription",
     description:
-      "Send transactional emails, setup your DNS to avoid spam folder (DKIM, DMARC, SPF in subdomain), and listen to webhook to receive & forward emails",
+      "Get a transcription of the video, with timestamps, to quickly find the part you need.",
     type: "video",
     path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
     format: "video/webm",
@@ -35,9 +35,9 @@ const features = [
     ),
   },
   {
-    title: "Payments",
+    title: "Summary",
     description:
-      "Create checkout sessions, handle webhooks to update user's account (subscriptions, one-time payments...) and tips to setup your account & reduce chargebacks",
+      "Get a summary of the video, with the most important points, to quickly understand the content.",
     type: "image",
     path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
     alt: "A computer",
@@ -58,48 +58,6 @@ const features = [
       </svg>
     ),
   },
-  {
-    title: "Authentication",
-    description:
-      "Magic links setup, login with Google walkthrough, save user in MongoDB/Supabase, private/protected pages & API calls",
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Style",
-    description:
-      "Components, animations & sections (like this features section), 20+ themes with daisyUI, automatic dark mode",
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
-        />
-      </svg>
-    ),
-  },
 ];
 
 // An SEO-friendly accordion component including the title and a description (when clicked.)
@@ -108,40 +66,39 @@ const Item = ({ feature, isOpen, setFeatureSelected }) => {
   const { title, description, svg } = feature;
 
   return (
-    // <li>
-    //   <button
-    //     className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
-    //     onClick={(e) => {
-    //       e.preventDefault();
-    //       setFeatureSelected();
-    //     }}
-    //     aria-expanded={isOpen}
-    //   >
-    //     <span className={`duration-100 ${isOpen ? "text-primary" : ""}`}>
-    //       {svg}
-    //     </span>
-    //     <span
-    //       className={`flex-1 text-base-content ${
-    //         isOpen ? "text-primary font-semibold" : ""
-    //       }`}
-    //     >
-    //       <h3 className="inline">{title}</h3>
-    //     </span>
-    //   </button>
+    <li>
+      <button
+        className="relative flex gap-2 items-center w-full py-5 text-base font-medium text-left md:text-lg"
+        onClick={(e) => {
+          e.preventDefault();
+          setFeatureSelected();
+        }}
+        aria-expanded={isOpen}
+      >
+        <span className={`duration-100 ${isOpen ? "text-primary" : ""}`}>
+          {svg}
+        </span>
+        <span
+          className={`flex-1 text-base-content ${
+            isOpen ? "text-primary font-semibold" : ""
+          }`}
+        >
+          <h3 className="inline">{title}</h3>
+        </span>
+      </button>
 
-    //   <div
-    //     ref={accordion}
-    //     className={`transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden`}
-    //     style={
-    //       isOpen
-    //         ? { maxHeight: accordion?.current?.scrollHeight, opacity: 1 }
-    //         : { maxHeight: 0, opacity: 0 }
-    //     }
-    //   >
-    //     <div className="pb-5 leading-relaxed">{description}</div>
-    //   </div>
-    // </li>
-    <div>Feature Item</div>
+      <div
+        ref={accordion}
+        className={`transition-all duration-300 ease-in-out text-base-content-secondary overflow-hidden`}
+        style={
+          isOpen
+            ? { maxHeight: accordion?.current?.scrollHeight, opacity: 1 }
+            : { maxHeight: 0, opacity: 0 }
+        }
+      >
+        <div className="pb-5 leading-relaxed">{description}</div>
+      </div>
+    </li>
   );
 };
 
@@ -181,8 +138,7 @@ const Media = ({ feature }) => {
       />
     );
   } else {
-    // return <div className={`${style} !border-none`}></div>;
-    return <div>Media Content</div>;
+    return <div className={`${style} !border-none`}></div>;
   }
 };
 
@@ -198,9 +154,9 @@ const FeaturesAccordion = () => {
     >
       <div className="px-8">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
-          All you need to ship your startup fast
+          All you need to effectively learn from
           <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            and get profitable
+            YouTube videos
           </span>
         </h2>
         <div className=" flex flex-col md:flex-row gap-12 md:gap-24">
@@ -217,7 +173,7 @@ const FeaturesAccordion = () => {
               ))}
             </ul>
 
-            <Media feature={features[featureSelected]} key={featureSelected} />
+            {/* <Media feature={features[featureSelected]} key={featureSelected} /> */}
           </div>
         </div>
       </div>

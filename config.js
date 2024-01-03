@@ -2,7 +2,7 @@ import themes from "daisyui/src/theming/themes.js";
 
 const config = {
   // REQUIRED
-  appName: "SummarizeAYouTubeVideo",
+  appName: "Summarize A YouTube Video",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "Summarize any YouTube video in 2 clicks. Fast.",
@@ -26,18 +26,18 @@ const config = {
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Starter",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "Perfect for occassional summarization",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 79,
+        price: 19,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 99,
+        priceAnchor: 39,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Standard Summarization",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "Fast" },
+          { name: "Accurate" },
+          { name: "Up to 15 videos per month" },
         ],
       },
       {
@@ -45,20 +45,19 @@ const config = {
         isFeatured: true,
         priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1OToulBXFlSGQUABeB8kaYt6"
+            ? "price_1OUWr8BXFlSGQUAB9m0syPHi"
             : "price_456",
-        name: "Advanced",
-        description: "You need more power",
+        name: "Advanced Summarization",
+        description: "You're a regular content consumer and you need more summaries.",
         price: 99,
         priceAnchor: 149,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Advanced Summarization",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
+          { name: "Fast" },
+          { name: "Accurate" },
+          { name: "Up to 50 videos per month" },
           { name: "24/7 support" },
         ],
       },
